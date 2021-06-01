@@ -40,6 +40,7 @@ public class DiscordBot {
                 // to be done, but instead of blocking the thread, waiting for it
                 // to finish, it will just execute the results asynchronously.
                 .subscribe(event -> {
+                    try{
                     final String content = event.getMessage().getContent(); // 3.1 Message.getContent() is a String
                     for (final Map.Entry<String, ICommand> entry : commands.entrySet()) {
                         // We will be using ! as our "prefix" to any command in the system.
@@ -47,7 +48,7 @@ public class DiscordBot {
                             entry.getValue().execute(event);
                             break;
                         }
-                    }
+                    }} catch(Exception e){}
                 });
     }
 

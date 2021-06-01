@@ -1,7 +1,20 @@
 package ro.uaic.info.rssowl;
 
-public class Config {
-    public static String token = "ODQ4OTE3NDM2MzA3OTk2NzAy.YLTl-A.JO-LPKd1n3zyR_EodH1yopLrhiQ";
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.Map;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Config {
+    public final String token;
+    public final Map<String, String> rssSources;
+
+    public Config(
+            @JsonProperty("token") String token,
+            @JsonProperty("rssSources") Map<String, String> rssSources
+    ) {
+        this.token = token;
+        this.rssSources = rssSources;
+    }
 
 }

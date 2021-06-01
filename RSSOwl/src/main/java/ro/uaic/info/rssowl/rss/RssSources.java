@@ -34,4 +34,10 @@ public class RssSources {
     public static void removeRssSource(String rssName){
         getInstance().rssSources.remove(rssName);
     }
+
+    public static HashMap<String, RssFeed> getRssSources() {
+        return getInstance().rssSources;
+    }
+    
+    
 }
