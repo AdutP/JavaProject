@@ -1,0 +1,11 @@
+ro\uaic\info\rssowl\rss\RssFeed.class
+ro\uaic\info\rssowl\rss\RssChecker.class
+ro\uaic\info\rssowl\rss\RssSources.class
+ro\uaic\info\rssowl\DiscordBot.class
+ro\uaic\info\rssowl\Commands\AddCmd.class
+ro\uaic\info\rssowl\Commands\NewCmd.class
+ro\uaic\info\rssowl\Commands\ICommand.class
+ro\uaic\info\rssowl\Commands\PingCmd.class
+ro\uaic\info\rssowl\Config.class
+ro\uaic\info\rssowl\rss\RssEntry.class
+ro\uaic\info\rssowl\Main.class
